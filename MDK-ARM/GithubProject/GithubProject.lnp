@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"githubproject\startup_stm32f103xb.o"
+"githubproject\main.o"
+"githubproject\stm32f1xx_it.o"
+"githubproject\stm32f1xx_hal_msp.o"
+"githubproject\stm32f1xx_hal_gpio_ex.o"
+"githubproject\stm32f1xx_hal_tim.o"
+"githubproject\stm32f1xx_hal_tim_ex.o"
+"githubproject\stm32f1xx_hal.o"
+"githubproject\stm32f1xx_hal_rcc.o"
+"githubproject\stm32f1xx_hal_rcc_ex.o"
+"githubproject\stm32f1xx_hal_gpio.o"
+"githubproject\stm32f1xx_hal_dma.o"
+"githubproject\stm32f1xx_hal_cortex.o"
+"githubproject\stm32f1xx_hal_pwr.o"
+"githubproject\stm32f1xx_hal_flash.o"
+"githubproject\stm32f1xx_hal_flash_ex.o"
+"githubproject\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "GithubProject\GithubProject.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GithubProject.map" -o GithubProject\GithubProject.axf
